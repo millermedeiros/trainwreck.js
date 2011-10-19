@@ -1,7 +1,7 @@
 
 # Trainwreck.js : chaining made easy #
 
-![train wreck](https://github.com/millermedeiros/vim-statline/raw/master/_assets/trainwreck.jpg)
+![train wreck](https://github.com/millermedeiros/trainwreck.js/raw/d168089ea1/_assets/trainwreck.jpg)
 
 https://github.com/millermedeiros/trainwreck.js/
 
