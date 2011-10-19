@@ -19,7 +19,8 @@ just to be able to use chaining. - Modifying objects you don't own is
 [considered](http://www.nczonline.net/blog/2010/03/02/maintainable-javascript-dont-modify-objects-you-down-own/)
 a [bad](http://en.wikipedia.org/wiki/Single_responsibility_principle)
 [practice](blog.millermedeiros.com/2010/08/stop-writing-plugins-start-writing-components/)!
-3. Create a chainable alias to existing libraries if they don't support it.
+3. Some libraries doesn't support chaining, this is an easy way to create an
+   alias which does support it.
 
 
 
