@@ -1,23 +1,25 @@
 
 # Trainwreck.js : chaining made easy #
 
+![train wreck](https://github.com/millermedeiros/vim-statline/raw/master/_assets/trainwreck.jpg)
+
 https://github.com/millermedeiros/trainwreck.js/
 
 
 
 ## Why? ##
 
-Chaining can be an useful feature when you want to perform multiple actions in
+1. Chaining can be an useful feature when you want to perform multiple actions in
 sequence, but implementing it manually can be tiresome and returning `this` at
-each function seems awkward - there is a "better" way of doing it.
-
-A lot of people don't understand how chaining works, they think it's something
+each function seems awkward...
+2. A lot of people don't understand how chaining works, they think it's something
 "magical" which can't be easily replicated, and because of that they augment
 [jQuery](http://jquery.com) or [underscore.js](documentcloud.github.com/underscore/)
 just to be able to use chaining. - Modifying objects you don't own is
 [considered](http://www.nczonline.net/blog/2010/03/02/maintainable-javascript-dont-modify-objects-you-down-own/)
 a [bad](http://en.wikipedia.org/wiki/Single_responsibility_principle)
 [practice](blog.millermedeiros.com/2010/08/stop-writing-plugins-start-writing-components/)!
+3. Create a chainable alias to existing libraries if they don't support it.
 
 
 
