@@ -1,0 +1,111 @@
+
+# Trainwreck.js : chaining made easy #
+
+https://github.com/millermedeiros/trainwreck.js/
+
+
+
+## Why? ##
+
+Chaining can be an useful feature when you want to perform multiple actions in
+sequence, but implementing it manually can be tiresome and returning `this` at
+each function seems awkward - there is a "better" way of doing it.
+
+A lot of people don't understand how chaining works, they think it's something
+"magical" which can't be easily replicated, and because of that they augment
+[jQuery](http://jquery.com) or [underscore.js](documentcloud.github.com/underscore/)
+just to be able to use chaining. - Modifying objects you don't own is
+[considered](http://www.nczonline.net/blog/2010/03/02/maintainable-javascript-dont-modify-objects-you-down-own/)
+a [bad](http://en.wikipedia.org/wiki/Single_responsibility_principle)
+[practice](blog.millermedeiros.com/2010/08/stop-writing-plugins-start-writing-components/)!
+
+
+
+## Haven't I seen this before? ##
+
+Nothing groundbreaking about this library. I've done the same thing
+a [couple](https://github.com/millermedeiros/CanvasContext2DWrapper) times
+[before](https://gist.github.com/870867) and I'm sure a lot of people have done
+it as well, sharing it just because it can be useful and because I couldn't
+find a library which the only purpose was to provide chaining.
+
+
+
+## Why name it Train Wreck? ##
+
+The name is a homage to Robert C. Martin book
+[Clean Code](http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882).
+The author uses the term on the Chapter 6 (Objects and Data Structure)
+to name a sample code that appears to violate the
+[Law of Demeter](http://en.wikipedia.org/wiki/Law_of_Demeter). According to
+the author "it look like a bunch of coupled train cars." and it is "generally
+considered to be sloppy style and should be avoided".
+
+I'm also not a huge fan of chaining and think it should be used with care,
+if abused it can make code harder to read and to refactor, but sometimes
+it can make code cleaner and depending on the API it makes total sense to
+use it.
+
+
+
+## Examples ##
+
+
+### Chaining all the properties and methods of an Object ###
+
+```js
+//base object
+var base = {
+    val : 'lorem',
+    trace : function(){
+        console.log(this.val);
+    }
+};
+
+//create a new object that wrap calls to the "base" object
+var foo = trainwreck.create(base);
+
+//"chain, chain, chain.."
+foo.trace().val('ipsum').trace();
+
+//note that `base` is modified, `foo` is just an alias.
+console.log(base.val); //log "ipsum"
+```
+
+### Chaining individual members ###
+
+```js
+//`bar` should be defined before calling the `prop` and `fn`
+//passing it as parameter.
+var bar = {};
+
+//chainable alias to "base" methods
+bar.msg = trainwreck.prop('val', base, bar);
+bar.log = trainwreck.fn('trace', base, bar);
+
+//"chain, chain, chain.."
+bar.log().msg('awsum').log();
+
+//note that `base` is modified, `bar` is just an alias.
+console.log(base.val); //log "awsum"
+```
+
+
+
+## Changelog ##
+
+### v0.1.0 (2010/10/19) ###
+
+ - initial release.
+
+
+
+## Author ##
+
+[Miller Medeiros](http://blog.millermedeiros.com/)
+
+
+
+## License ##
+
+Released under the [WTFPL](http://sam.zoy.org/wtfpl/).
