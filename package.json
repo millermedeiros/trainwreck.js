@@ -1,0 +1,22 @@
+{
+    "name" : "trainwreck",
+    "description" : "Chaining made easy.",
+    "keywords" : ["chaining", "method", "function", "property"],
+    "homepage" : "https://github.com/millermedeiros/trainwreck.js",
+    "version" : "0.1.0",
+    "author" : "Miller Medeiros",
+    "repository" : {
+        "type" : "git",
+        "url" : "https://github.com/millermedeiros/trainwreck.js"
+    },
+    "main" : "trainwreck.js",
+    "bugs" : {
+        "web" : "https://github.com/millermedeiros/trainwreck.js/issues"
+    },
+    "licenses" : [
+        {
+            "type" : "WTFPL",
+            "url" : "http://sam.zoy.org/wtfpl/"
+        }
+    ]
+}
