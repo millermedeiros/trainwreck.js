@@ -10,15 +10,15 @@ https://github.com/millermedeiros/trainwreck.js/
 ## Why? ##
 
 1. Chaining can be an useful feature when you want to perform multiple actions in
-sequence, but implementing it manually can be tiresome and returning `this` at
-each function seems awkward...
+   sequence, but implementing it manually can be tiresome and returning `this` at
+   each function seems awkward...
 2. A lot of people don't understand how chaining works, they think it's something
-"magical" which can't be easily replicated, and because of that they augment
-[jQuery](http://jquery.com) or [underscore.js](documentcloud.github.com/underscore/)
-just to be able to use chaining. - Modifying objects you don't own is
-[considered](http://www.nczonline.net/blog/2010/03/02/maintainable-javascript-dont-modify-objects-you-down-own/)
-a [bad](http://en.wikipedia.org/wiki/Single_responsibility_principle)
-[practice](blog.millermedeiros.com/2010/08/stop-writing-plugins-start-writing-components/)!
+   "magical" which can't be easily replicated, and because of that they augment
+   [jQuery](http://jquery.com) or [underscore.js](documentcloud.github.com/underscore/)
+   just to be able to use chaining. - Modifying objects you don't own is
+   [considered](http://www.nczonline.net/blog/2010/03/02/maintainable-javascript-dont-modify-objects-you-down-own/)
+   a [bad](http://en.wikipedia.org/wiki/Single_responsibility_principle)
+   [practice](blog.millermedeiros.com/2010/08/stop-writing-plugins-start-writing-components/)!
 3. Some libraries doesn't support chaining, this is an easy way to create an
    alias which does support it.
 
@@ -97,7 +97,7 @@ console.log(base.val); //log "awsum"
 
 ## Changelog ##
 
-### v0.1.0 (2010/10/19) ###
+### v0.1.0 (2011/10/19) ###
 
  - initial release.
 
