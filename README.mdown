@@ -1,4 +1,3 @@
-
 # Trainwreck.js : chaining made easy #
 
 ![train wreck](https://github.com/millermedeiros/trainwreck.js/raw/d168089ea1/_assets/trainwreck.jpg)
@@ -21,7 +20,6 @@ https://github.com/millermedeiros/trainwreck.js/
    [practice](blog.millermedeiros.com/2010/08/stop-writing-plugins-start-writing-components/)!
 3. Some libraries doesn't support chaining, this is an easy way to create an
    alias which does support it.
-
 
 
 ## Haven't I seen this before? ##
@@ -92,6 +90,13 @@ bar.log().msg('awsum').log();
 //note that `base` is modified, `bar` is just an alias.
 console.log(base.val); //log "awsum"
 ```
+
+
+
+## More ##
+
+**Read** the [blog post](http://blog.millermedeiros.com/2011/10/javascript-chaining-and-trainwreck-js/)
+with more info about the project, side-effects and method chaining in general.
 
 
 
